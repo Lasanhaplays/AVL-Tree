@@ -83,8 +83,9 @@ int main(){
             int mat;
             float nota;
             char nome[70];
-            printf("Sobre o aluno que deseja inserir:\nNome: ");
-            scanf("%s", nome);
+            printf("Sobre o aluno que deseja inserir:\nNome:");
+            fgets(nome,70,stdin);
+            scanf("%[^\n]s", nome);
             printf("Matricula: ");
             scanf("%d", &mat);
             printf("Nota final: ");
