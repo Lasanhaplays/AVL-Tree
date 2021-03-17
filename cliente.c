@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <conio.h>
 #include "avl.c"
 
 /*Estrutura que será guardada pelos nós da árvore AVL já criada em "avl.c", sendo
