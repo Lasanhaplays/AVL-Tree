@@ -71,6 +71,7 @@ void menu(){
     printf("Insira a opcao correspondente ao que deseja realizar: ");
 }
 
+/*Função principal que utiliza a função void menu para decidir qual função usar de acordo com a opção escolhida*/
 int main(){
     int loop = 0;
     No *root = NULL;

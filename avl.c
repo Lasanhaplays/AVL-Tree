@@ -37,7 +37,6 @@ No *RotacaoEsq(No *node){
     No *pivo = node->dir, *aux = pivo->esq;
     pivo->esq = node;
     node->dir = aux;
-    pivo->bal = 0;
     return pivo;
 }
 
