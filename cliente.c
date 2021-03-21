@@ -79,7 +79,7 @@ int main(){
         menu();
         scanf("%d",&loop);
         printf("\n");
-        if(loop == 1){
+        if(loop == 1){  /*Caso a opção seja a de número 1, a função irá chamar a insertAVL para adicionar uma nova chave */
             int mat;
             float nota;
             char nome[70];
@@ -96,7 +96,7 @@ int main(){
             else root = insertAVL(root, aux, comparaAluno);
             printAVL(root, 2, impressaoArvore);
         }
-        else if(loop == 2){
+        else if(loop == 2){ /*Caso a opção seja a de número 2, a função irá chamar a removeNO para deletar o nó desejado e após isso, imprimir a árvore  */
             int mat;
             if(root == NULL)
                 printf("Arvore vazia. Insira uma chave inicialmente\n\n");
@@ -108,7 +108,7 @@ int main(){
                 printAVL(root, 2, impressaoArvore);
             }
         }
-        else if(loop == 3){
+        else if(loop == 3){ /*Caso a opção seja a de número 3, a função irá chamar a searchAVL para procurar o nó desejado e após isso, imprimir a chave encontrada  */
                 int mat;
                 printf("Insira a matricula do aluno no qual deseja verificar: ");
                 scanf("%d", &mat);
@@ -117,11 +117,11 @@ int main(){
                 if(aux == NULL) printf("Tal matricula nao se encontra no sistema. Tente Novamente\n\n");
                 else impressaoAluno(aux->chave);
         }
-        else if(loop == 4){
+        else if(loop == 4){ /*Caso a opção seja a de número 4, a função irá chamar a printtAVL para imprimir a árvore  */
             printf("\nImpressao da arvore onde o campo a ser impresso e a chave de busca: \n\n");
             printAVL(root, 2, impressaoArvore);
         }
-        else if(loop == 5){
+        else if(loop == 5){ /*Caso a opção seja a de número 5, a função irá encerrar o programa*/
             printf("Ate mais");
         }
         else printf("O numero inserido nao corresponde a nenhuma funcao\nTente novamente\n\n");
